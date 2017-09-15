@@ -9,4 +9,5 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^nearestDHL$', v.nearestDHL, name='nearestDHL'),
+    url(r'^track$', v.track, name='track'),
 ]

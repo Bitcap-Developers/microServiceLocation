@@ -70,6 +70,12 @@ def nearestDHL(request):
 
 
 
+def track(request):
+    # url = "http://139.59.40.238:88/trackShipment?TrackingNo=5520188122"
+    # r = requests.get(url)
+    # context_dict = {}
+    # context_dict['r'] = r
+    return render(request,'app/track.html')
 
 
 
