@@ -17,7 +17,7 @@ def nearestDHL(request):
     ######  Pass the option of the servise as string containing an the number option like '1'
     ######  Pass the postal code as the second parameter in url
     '''
-    print 'entered'
+    print ('entered')
     # lat = request.GET.get("lat")
     # lon = request.GET.get("lon")
     zipcode = request.GET.get("zipcode")
@@ -27,13 +27,13 @@ def nearestDHL(request):
     # lon = x['lon']
     # optionSelected = x['optionSelected']
 
-    # print 'get parameters stored'
+    # (print) 'get parameters stored'
     # ## add the x y coordinates of the input 
     # g = geocoder.google([lat,lon] , method ='reverse')
-    # # print g.json
-    # print g.json
+    # # (print) g.json
+    # (print) g.json
     # zip = str(g.json['postal'])
-    print zipcode
+    print (zipcode)
     # optionSelected = "1"
     url = "http://parcel.dhl.co.uk/dhl-service-point/find-your-nearest/?gomap=1&option=" + str(optionSelected) + "&postcode=" + str(zipcode)
 
